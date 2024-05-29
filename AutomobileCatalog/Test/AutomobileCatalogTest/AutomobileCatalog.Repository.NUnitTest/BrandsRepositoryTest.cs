@@ -1,4 +1,5 @@
-﻿using AutomobileCatalog.Persistense;
+﻿using AutomobileCatalog.Models.Models;
+using AutomobileCatalog.Persistense;
 using AutomobileCatalog.Repositories.RepositoryImplement;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -10,23 +11,25 @@ namespace AutomobileCatalog.Repository.NUnitTest
     public class BrandsRepositoryTest
     {
         private AutomobileCatalogDbContext _context;
-        private BrandsRepository _brandsRepository
+        private BrandsRepository _brandsRepository;
 
         [SetUp]
         public void Setup()
         {
-            var options = new DbContextOptionsBuilder<AutomobileCatalogDbContext>()
-                .UseInMemoryDatabase(databaseName: "FoodShopTestDatabase")
-                .Options;
+            var inMemorySettings = new Dictionary<string, string> {
+                {"ConnectionStrings:DBCnxSqlServer", "FakeConnectionString"}
+            };
 
             var configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddInMemoryCollection()
+                .AddInMemoryCollection(inMemorySettings)
                 .Build();
 
-            _context = new AutomobileCatalogDbContext(configuration, options);
+            var options = new DbContextOptionsBuilder<AutomobileCatalogDbContext>()
+                .UseInMemoryDatabase(databaseName: "AutomobileCatalogTestDatabase")
+                .Options;
 
-            _foodRepository = new FoodRepository(_context);
+            _context = new AutomobileCatalogDbContext(configuration, options);
+            _brandsRepository = new BrandsRepository(_context);
         }
 
         [TearDown]
@@ -42,7 +45,7 @@ namespace AutomobileCatalog.Repository.NUnitTest
             // Arrange
             var food = new Brands
             {
-                Name = "TEST",
+                Nombre = "TEST",
             };
 
             // Act
