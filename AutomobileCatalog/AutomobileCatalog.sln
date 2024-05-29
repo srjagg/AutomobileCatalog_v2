@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{AF2FF745-320A-40D7-89CA-3969F5D56E88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{019C5BF1-AA6C-439C-983D-E725A1DA5805}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutomobileCatalogServices", "AutomobileCatalogServices", "{98C68F47-D189-4CBD-BB39-B14BAE2104D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D3927435-50A3-4003-A922-C1FB6AB98C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileCatalog.Persistense", "Src\Services\AutomobileCatalogServices\AutomobileCatalog.Persistense\AutomobileCatalog.Persistense.csproj", "{C772127A-A9F5-48BF-9F6C-EA79F02C66B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileCatalog.Repositories", "Src\Services\AutomobileCatalogServices\AutomobileCatalog.Repositories\AutomobileCatalog.Repositories.csproj", "{B031C42B-B067-4E76-9270-39744EE9A290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileCatalog.UnitOfWork", "Src\Services\AutomobileCatalogServices\AutomobileCatalog.UnitOfWork\AutomobileCatalog.UnitOfWork.csproj", "{4411A377-B72F-47F7-9E7F-CE250AAE80B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileCatalog.Core", "Src\Services\AutomobileCatalogServices\AutomobileCatalog.Core\AutomobileCatalog.Core.csproj", "{D222D7F9-A782-43EB-80CC-56C2B958297C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileCatalog.WebApi", "Src\Services\AutomobileCatalogServices\AutomobileCatalog.WebApi\AutomobileCatalog.WebApi.csproj", "{82A89E76-DC5C-49A6-A6EE-3C85DEA4E874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileCatalog.Models", "Src\Services\AutomobileCatalogServices\AutomobileCatalog.Models\AutomobileCatalog.Models.csproj", "{63D86942-5A6A-4949-9966-B3696E80F891}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C772127A-A9F5-48BF-9F6C-EA79F02C66B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C772127A-A9F5-48BF-9F6C-EA79F02C66B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C772127A-A9F5-48BF-9F6C-EA79F02C66B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C772127A-A9F5-48BF-9F6C-EA79F02C66B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B031C42B-B067-4E76-9270-39744EE9A290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B031C42B-B067-4E76-9270-39744EE9A290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B031C42B-B067-4E76-9270-39744EE9A290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B031C42B-B067-4E76-9270-39744EE9A290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4411A377-B72F-47F7-9E7F-CE250AAE80B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4411A377-B72F-47F7-9E7F-CE250AAE80B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4411A377-B72F-47F7-9E7F-CE250AAE80B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4411A377-B72F-47F7-9E7F-CE250AAE80B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D222D7F9-A782-43EB-80CC-56C2B958297C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D222D7F9-A782-43EB-80CC-56C2B958297C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D222D7F9-A782-43EB-80CC-56C2B958297C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D222D7F9-A782-43EB-80CC-56C2B958297C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A89E76-DC5C-49A6-A6EE-3C85DEA4E874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A89E76-DC5C-49A6-A6EE-3C85DEA4E874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A89E76-DC5C-49A6-A6EE-3C85DEA4E874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A89E76-DC5C-49A6-A6EE-3C85DEA4E874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D86942-5A6A-4949-9966-B3696E80F891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D86942-5A6A-4949-9966-B3696E80F891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D86942-5A6A-4949-9966-B3696E80F891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D86942-5A6A-4949-9966-B3696E80F891}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{019C5BF1-AA6C-439C-983D-E725A1DA5805} = {AF2FF745-320A-40D7-89CA-3969F5D56E88}
+		{98C68F47-D189-4CBD-BB39-B14BAE2104D3} = {019C5BF1-AA6C-439C-983D-E725A1DA5805}
+		{C772127A-A9F5-48BF-9F6C-EA79F02C66B3} = {98C68F47-D189-4CBD-BB39-B14BAE2104D3}
+		{B031C42B-B067-4E76-9270-39744EE9A290} = {98C68F47-D189-4CBD-BB39-B14BAE2104D3}
+		{4411A377-B72F-47F7-9E7F-CE250AAE80B4} = {98C68F47-D189-4CBD-BB39-B14BAE2104D3}
+		{D222D7F9-A782-43EB-80CC-56C2B958297C} = {98C68F47-D189-4CBD-BB39-B14BAE2104D3}
+		{82A89E76-DC5C-49A6-A6EE-3C85DEA4E874} = {98C68F47-D189-4CBD-BB39-B14BAE2104D3}
+		{63D86942-5A6A-4949-9966-B3696E80F891} = {98C68F47-D189-4CBD-BB39-B14BAE2104D3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64DB6118-3F85-4887-A0CC-F124FBD65F72}
+	EndGlobalSection
+EndGlobal
