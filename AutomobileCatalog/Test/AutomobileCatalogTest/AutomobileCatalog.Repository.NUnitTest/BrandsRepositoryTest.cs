@@ -3,7 +3,6 @@ using AutomobileCatalog.Persistense;
 using AutomobileCatalog.Repositories.RepositoryImplement;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System.Threading.Tasks;
 
 namespace AutomobileCatalog.Repository.NUnitTest
 {
