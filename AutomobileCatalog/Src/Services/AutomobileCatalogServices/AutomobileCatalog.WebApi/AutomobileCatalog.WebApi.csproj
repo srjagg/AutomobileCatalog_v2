@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AutomobileCatalog.Core\AutomobileCatalog.Core.csproj" />
     <ProjectReference Include="..\AutomobileCatalog.Persistense\AutomobileCatalog.Persistense.csproj" />
   </ItemGroup>
 

@@ -9,13 +9,13 @@ namespace AutomobileCatalog.Persistense
     {
         private readonly IConfiguration _configuration;
 
-        public AutomobileCatalogDbContext(IConfiguration configuration)
+        public AutomobileCatalogDbContext(IConfiguration configuration, DbContextOptions<AutomobileCatalogDbContext> options) : base(options)
         {
             _configuration = configuration;
         }
 
-        private DbSet<Cars> Cars { get; set; }
-        private DbSet<Brands> Brands { get; set; }
+        public DbSet<Cars> Cars { get; set; }
+        public DbSet<Brands> Brands { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
