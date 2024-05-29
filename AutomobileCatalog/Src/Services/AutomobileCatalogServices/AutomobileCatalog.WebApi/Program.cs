@@ -1,4 +1,9 @@
+using AutomobileCatalog.Persistense;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//Inyectamos el contexto
+builder.Services.AddDbContext<AutomobileCatalogDbContext>();
 
 // Add services to the container.
 
