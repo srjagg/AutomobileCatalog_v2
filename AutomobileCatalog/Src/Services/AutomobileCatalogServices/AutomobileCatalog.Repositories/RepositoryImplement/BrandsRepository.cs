@@ -17,5 +17,15 @@ namespace AutomobileCatalog.Repositories.RepositoryImplement
             }
             return 1;
         }
+
+        public async Task<Brands?> GetBrandByIdAsync(int id)
+        {
+            var brand = await GetByIDAsync(id);
+
+            if (brand is null)
+                return null;
+
+            return brand;
+        }
     }
 }

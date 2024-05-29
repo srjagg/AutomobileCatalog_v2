@@ -21,6 +21,14 @@ namespace AutomobileCatalog.Core.CoreImplement
 
             try
             {
+                var brand = await _unitOfWork.BrandsRepository.GetBrandByIdAsync(carDto.BrandId);
+                if (brand == null)
+                {
+                    response.IsSuccess = false;
+                    response.Message = "La marca especificada no existe.";
+                    return response;
+                }
+
                 var car = new Cars
                 {
                     Id = carDto.Id,
@@ -29,6 +37,7 @@ namespace AutomobileCatalog.Core.CoreImplement
                     Precio = carDto.Precio,
                     Kilometraje = carDto.Kilometraje,
                     BrandId = carDto.BrandId,
+                    Brands = brand
                 };
 
                 response.Data = await _unitOfWork.CarsRepository.AddCarAsync(car);

@@ -5,5 +5,6 @@ namespace AutomobileCatalog.Repositories.RepositoryInterface
     public interface IBrandsRepository
     {
         Task<int> AddBrandAsync(Brands brand);
+        Task<Brands?> GetBrandByIdAsync(int id);
     }
 }
